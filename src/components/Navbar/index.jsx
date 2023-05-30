@@ -1,32 +1,37 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import 'tailwindcss/tailwind.css';
 
 const Navbar = () => {
+
+  const [activeLink, setActiveLink] = useState("Home")
+
+
   return (
-    <nav className="flex justify-center space-x-6 py-4 border-gray-200 dark:bg-gray-900">
+    <nav className="flex justify-center py-4 border-gray-200 dark:bg-gray-900">
       <ul className="flex justify-center space-x-6">
-        <li>
+        <li onClick={()=> setActiveLink('Hiragana')}>
           <Link
-            to="/hiragana-quiz"
-            activeClassName="border-b-2 border-blue-500"
-            className="border-transparent"
+            to="/hiragana"
+            className={`${activeLink=='Hiragana' ? "border-b-2 border-blue-500" : ''}`}
           >
             Hiragana
           </Link>
         </li>
-        <li>
+        <li onClick={()=> setActiveLink('Home')}>
           <Link
             to="/"
-            activeClassName="border-b-2 border-blue-500"
-            className="border-transparent"
+      
+            className={`${activeLink=='Home' ? "border-b-2 border-blue-500" : ''}`}
           >
             Home
           </Link>
         </li>
-        <li>
+        <li onClick={()=> setActiveLink('Katakana')}>
           <Link
-            to="/katakana-quiz"
-            activeClassName="border-b-2 border-blue-500"
-            className="border-transparent"
+            to="/katakana"
+     
+            className={`${activeLink=='Katakana' ? "border-b-2 border-blue-500" : ''}`}
           >
             Katakana
           </Link>
