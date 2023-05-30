@@ -8,7 +8,8 @@ const Navbar = () => {
 
 
   return (
-    <nav className="flex justify-center py-4 border-gray-200 dark:bg-gray-900">
+    <header>
+          <nav className="flex justify-center py-4 border-gray-200 dark:bg-gray-900">
       <ul className="flex justify-center space-x-6">
         <li onClick={()=> setActiveLink('Hiragana')}>
           <Link
@@ -38,6 +39,8 @@ const Navbar = () => {
         </li>
       </ul>
     </nav>
+    </header>
+
   );
 };
 
