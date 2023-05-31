@@ -5,27 +5,34 @@ import axios from "axios";
 const Translator = () => {
   const [inputText, setInputText] = useState("");
   const [translatedText, setTranslatedText] = useState("");
-  
-  const encodedParams = new URLSearchParams();
-  encodedParams.set("text", "hello");
-  encodedParams.set("to_lang", "ja");
-  encodedParams.set("from_lang", "en");
 
-  const options = {
-    method: "POST",
-    url: "https://google-translate105.p.rapidapi.com/v1/rapid/translate",
-    headers: {
-      "content-type": "application/x-www-form-urlencoded",
-      "X-RapidAPI-Key": "f977b620c7msh7edc35cfaccd8b0p1c601fjsnb36e413da173",
-      "X-RapidAPI-Host": "google-translate105.p.rapidapi.com",
-    },
-    data: encodedParams,
-  };
+  
+//   const encodedParams = new URLSearchParams();
+//   encodedParams.set("text", "hello");
+//   encodedParams.set("to_lang", "ja");
+//   encodedParams.set("from_lang", "en");
+
+
 
   const makeTranslationRequest = async () => {
+    const options = {
+        method: "POST",
+        url: "https://google-translate105.p.rapidapi.com/v1/rapid/translate",
+        headers: {
+          "content-type": "application/x-www-form-urlencoded",
+          "X-RapidAPI-Key": "f977b620c7msh7edc35cfaccd8b0p1c601fjsnb36e413da173",
+          "X-RapidAPI-Host": "google-translate105.p.rapidapi.com",
+        },
+        data: {
+            text: inputText,
+            to_lang: "ja",
+            from_lang: "en"
+        },
+      };
     try {
-      const response = await axios.request(options);
-      console.log(response.data);
+      const response = await axios(options);
+      console.log(response.data.translated_text);
+      setTranslatedText(response.data.translated_text)
     } catch (error) {
       console.error(error);
     }
