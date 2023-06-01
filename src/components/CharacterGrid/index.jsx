@@ -49,17 +49,23 @@ const characters = [
   { romaji: 'n', hiragana: 'ん' }
 ];
 
+
 const CharacterGrid = () => {
   return (
-    <div className="grid grid-cols-5 gap-2 w-1/2 motion-safe:animate-fadeIn">
-      {characters.map((char, index) => (
-        <div key={index} className="p-4 bg-slate-900 shadow-md text-center">
-          <div className="text-4xl">{char.hiragana}</div>
-          <div className="text-sm">{char.romaji}</div>
-        </div>
-      ))}
+    <div className="content-center">
+      <h4 className="text-xl font-bold mb-10">Hiragana Chart</h4>
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 mx-auto max-w-md motion-safe:animate-fadeIn">
+        {characters.map((char, index) => (
+          <div key={index} className="p-4 bg-gray-900 rounded-lg shadow-sm text-center">
+            <div className="text-4xl">{char.hiragana}</div>
+            <div className="text-sm">{char.romaji}</div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
+
+
 
 export default CharacterGrid;

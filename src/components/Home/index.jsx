@@ -1,6 +1,7 @@
 import React from "react";
 import Translator from "../Translator";
 import CharacterGrid from "../CharacterGrid";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -18,10 +19,17 @@ const Home = () => {
           characters!
         </p>
         <p className="text-lg mb-4">
-          When you feel confident with your knowledge, please click on Hiragana
-          or Katakana to begin a quiz and gain streaks!
+          When you feel confident with your knowledge, please click on{" "}
+          <Link to="/hiragana" className="text-blue-500">
+            {" "}
+            Hiragana {" "}
+          </Link>
+          or{" "}
+          <Link to="/katakana" className="text-blue-500">
+            Katakana
+          </Link>{" "}
+          to begin a quiz.
         </p>
-        {/* You can add buttons or links here to navigate to the respective quiz pages */}
       </div>
       <CharacterGrid />
     </div>

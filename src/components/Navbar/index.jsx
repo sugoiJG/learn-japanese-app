@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import logoImage from "/Users/jg/Documents/PerScholas/japanese-study-app/japanese-study-app/src/assets/logo.png";
-
+import logoImage from "../../assets/logo.png"
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState("Home");
@@ -10,42 +9,49 @@ const Navbar = () => {
     <header>
       <nav className="bg-gray-900">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <Link to="/" className="text-white text-lg font-semibold">
-            <span>
-          <img src={logoImage} alt="Logo" className="w-6 h-6 mr-2 content-center" />
-          Study Japanese!
-          </span>
+          <Link to="/" className="text-white text-lg font-semibold flex items-center">
+            <img src={logoImage} alt="Logo" className="w-6 h-6 mr-2" />
+            <span>Study Japanese!</span>
           </Link>
-          <ul className="flex space-x-6">
-            <li
-              onClick={() => setActiveLink("Hiragana")}
-              className={`${
-                activeLink === "Hiragana"
-                  ? "border-b-2 border-blue-500"
-                  : "text-white hover:text-blue-500"
-              }`}
-            >
-              <Link to="/hiragana">Hiragana</Link>
+          <ul className="flex space-x-4">
+            <li>
+              <Link
+                to="/hiragana"
+                onClick={() => setActiveLink("Hiragana")}
+                className={`${
+                  activeLink === "Hiragana"
+                    ? "border-b-2 border-blue-500"
+                    : "text-white hover:text-blue-500"
+                }`}
+              >
+                Hiragana
+              </Link>
             </li>
-            <li
-              onClick={() => setActiveLink("Home")}
-              className={`${
-                activeLink === "Home"
-                  ? "border-b-2 border-blue-500"
-                  : "text-white hover:text-blue-500"
-              }`}
-            >
-              <Link to="/">Home</Link>
+            <li>
+              <Link
+                to="/"
+                onClick={() => setActiveLink("Home")}
+                className={`${
+                  activeLink === "Home"
+                    ? "border-b-2 border-blue-500"
+                    : "text-white hover:text-blue-500"
+                }`}
+              >
+                Home
+              </Link>
             </li>
-            <li
-              onClick={() => setActiveLink("Katakana")}
-              className={`${
-                activeLink === "Katakana"
-                  ? "border-b-2 border-blue-500"
-                  : "text-white hover:text-blue-500"
-              }`}
-            >
-              <Link to="/katakana">Katakana</Link>
+            <li>
+              <Link
+                to="/katakana"
+                onClick={() => setActiveLink("Katakana")}
+                className={`${
+                  activeLink === "Katakana"
+                    ? "border-b-2 border-blue-500"
+                    : "text-white hover:text-blue-500"
+                }`}
+              >
+                Katakana
+              </Link>
             </li>
           </ul>
         </div>
