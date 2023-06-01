@@ -46,11 +46,11 @@ const Translator = () => {
     e.preventDefault();
     makeTranslationRequest();
   };
-
+  
   return (
     <div>
       <textarea
-        className="text-black w-80 mt-6 rounded-lg"
+        className="text-black w-80 mt-6 rounded-lg p-4 border border-gray-300 focus:outline-none focus:border-blue-500"
         type="text"
         disabled="disabled"
         value={translatedText}
@@ -60,13 +60,15 @@ const Translator = () => {
       <br />
       <form onSubmit={handleSubmit}>
         <input
-          className="text-black w-80 m-6 focus:shadow-outline rounded-lg"
+          className="text-black w-80 m-6 p-2 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-500"
           type="text"
           value={inputText}
           onChange={(e) => setInputText(e.target.value)}
           placeholder="Enter text to translate"
         />
-        <button type="submit">Translate</button>
+        <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg" type="submit">
+          Translate
+        </button>
       </form>
     </div>
   );

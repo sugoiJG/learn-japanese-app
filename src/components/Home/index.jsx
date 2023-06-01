@@ -1,18 +1,29 @@
-import React, { useState, useEffect } from 'react';
-import Translator from "../Translator"
+import React from "react";
+import Translator from "../Translator";
+import CharacterGrid from "../CharacterGrid";
+
 const Home = () => {
-
-
   return (
-    <div>
-      <h1>Japanese App</h1>
-      <p>
-        Welcome to my Japanese study app! Below you can begin translating English into Japanese!
-        </p>
-        <p>
-        You can click the Hiragana and Katakana buttons at the top to begin a fun quiz!
-        </p>
+    <div className="max-w-4xl mx-auto px-4 py-8">
+      <h1 className="text-4xl font-bold mb-4">Japanese App</h1>
+      <p className="text-lg mb-6">
+        Welcome to my Japanese study app! Start by translating English into
+        Japanese below.
+      </p>
       <Translator />
+      <div className="mt-8 motion-safe:animate-fadeIn">
+        <h2 className="text-2xl font-bold mb-4">Learn Hiragana and Katakana</h2>
+        <p className="text-lg mb-4">
+          Below you can take some time to study Hiragana and Katakana
+          characters!
+        </p>
+        <p className="text-lg mb-4">
+          When you feel confident with your knowledge, please click on Hiragana
+          or Katakana to begin a quiz and gain streaks!
+        </p>
+        {/* You can add buttons or links here to navigate to the respective quiz pages */}
+      </div>
+      <CharacterGrid />
     </div>
   );
 };
