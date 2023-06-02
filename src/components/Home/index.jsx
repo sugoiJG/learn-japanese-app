@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
+    <div className="max-w-4xl mx-auto px-4 py-8 motion-safe:animate-fadeIn">
       <h1 className="text-4xl font-bold mb-4">Japanese App</h1>
       <p className="text-lg mb-6">
         Welcome to my Japanese study app! Start by translating English into
