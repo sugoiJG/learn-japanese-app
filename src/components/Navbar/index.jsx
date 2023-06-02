@@ -9,7 +9,7 @@ const Navbar = () => {
     <header>
       <nav className="bg-gray-900">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <Link to="/" className="text-white text-lg font-semibold flex items-center">
+          <Link to="//learn-japanese-app/" className="text-white text-lg font-semibold flex items-center">
             <img src={logoImage} alt="Logo" className="w-6 h-6 mr-2" />
             <span>Study Japanese!</span>
           </Link>
