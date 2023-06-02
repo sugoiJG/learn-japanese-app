@@ -29,7 +29,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                to="/"
+                to="/learn-japanese-app"
                 onClick={() => setActiveLink("Home")}
                 className={`${
                   activeLink === "Home"
