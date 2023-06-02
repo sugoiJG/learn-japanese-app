@@ -47,7 +47,6 @@ const hiraganaCharacters = [
   { romaji: 'wa', hiragana: 'わ' },
   { romaji: 'wo', hiragana: 'を' },
   { romaji: 'n', hiragana: 'ん' },
-
   { romaji: 'ga', hiragana: 'が' },
   { romaji: 'gi', hiragana: 'ぎ' },
   { romaji: 'gu', hiragana: 'ぐ' },
@@ -68,13 +67,11 @@ const hiraganaCharacters = [
   { romaji: 'bu', hiragana: 'ぶ' },
   { romaji: 'be', hiragana: 'べ' },
   { romaji: 'bo', hiragana: 'ぼ' },
-
   { romaji: 'pa', hiragana: 'ぱ' },
   { romaji: 'pi', hiragana: 'ぴ' },
   { romaji: 'pu', hiragana: 'ぷ' },
   { romaji: 'pe', hiragana: 'ぺ' },
   { romaji: 'po', hiragana: 'ぽ' }
-
 ];
 
 
@@ -93,9 +90,5 @@ const HiraganaGrid = () => {
     </div>
   );
 };
-
-
-
-
 
 export default HiraganaGrid;
