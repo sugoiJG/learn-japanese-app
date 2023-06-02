@@ -9,7 +9,7 @@ const Home = () => {
       <h1 className="text-4xl font-bold mb-4">Japanese App</h1>
       <p className="text-lg mb-6">
         Welcome to my Japanese study app! Start by translating English into
-        Japanese below.
+        Japanese below!
       </p>
       <Translator />
       <div className="mt-8 motion-safe:animate-fadeIn">
