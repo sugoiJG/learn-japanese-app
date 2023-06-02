@@ -10,11 +10,11 @@ const App = () => {
   return (
     <div className="min-h-screen bg-slate-800 text-white text-center">
         <Navbar />
-      {/* <Routes>
+      <Routes>
         <Route exact path="/" element={<Home/>} />
         <Route path="/hiragana" element={<HiraganaQuiz/>} />
         <Route path="/katakana" element={<KatakanaQuiz/>} /> 
-      </Routes> */}
+      </Routes>
     </div>
   );
 };
