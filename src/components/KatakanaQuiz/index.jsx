@@ -50,7 +50,32 @@ const KatakanaQuiz = () => {
             { romaji: 'ro', katakana: 'ロ' },
             { romaji: 'wa', katakana: 'ワ' },
             { romaji: 'wo', katakana: 'ヲ' },
-            { romaji: 'n', katakana: 'ン' }
+            { romaji: 'n', katakana: 'ン' },
+            { romaji: 'ga', katakana: 'ガ' },
+            { romaji: 'gi', katakana: 'ギ' },
+            { romaji: 'gu', katakana: 'グ' },
+            { romaji: 'ge', katakana: 'ゲ' },
+            { romaji: 'go', katakana: 'ゴ' },
+            { romaji: 'za', katakana: 'ザ' },
+            { romaji: 'ji', katakana: 'ジ' },
+            { romaji: 'zu', katakana: 'ズ' },
+            { romaji: 'ze', katakana: 'ゼ' },
+            { romaji: 'zo', katakana: 'ゾ' },
+            { romaji: 'da', katakana: 'ダ' },
+            { romaji: 'ji', katakana: 'ヂ' },
+            { romaji: 'zu', katakana: 'ヅ' },
+            { romaji: 'de', katakana: 'デ' },
+            { romaji: 'do', katakana: 'ド' },
+            { romaji: 'ba', katakana: 'バ' },
+            { romaji: 'bi', katakana: 'ビ' },
+            { romaji: 'bu', katakana: 'ブ' },
+            { romaji: 'be', katakana: 'ベ' },
+            { romaji: 'bo', katakana: 'ボ' },
+            { romaji: 'pa', katakana: 'パ' },
+            { romaji: 'pi', katakana: 'ピ' },
+            { romaji: 'pu', katakana: 'プ' },
+            { romaji: 'pe', katakana: 'ペ' },
+            { romaji: 'po', katakana: 'ポ' }
         ]
     
         const [input, setInput] = useState('')

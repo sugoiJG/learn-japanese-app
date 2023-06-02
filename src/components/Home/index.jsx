@@ -1,7 +1,8 @@
 import React from "react";
 import Translator from "../Translator";
-import CharacterGrid from "../CharacterGrid";
+import HiraganaGrid from "../HiraganaGrid";
 import { Link } from "react-router-dom";
+import KatakanaGrid from "../KatakanaGrid";
 
 const Home = () => {
   return (
@@ -31,7 +32,8 @@ const Home = () => {
           to begin a quiz.
         </p>
       </div>
-      <CharacterGrid />
+      <HiraganaGrid />
+      <KatakanaGrid />
     </div>
   );
 };
