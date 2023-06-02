@@ -79,7 +79,7 @@ const katakanaCharacters = [
 const KatakanaGrid = () => {
   return (
     <div className="content-center">
-      <h4 className="text-xl font-bold mb-10">Katakana Chart</h4>
+      <h4 className="text-xl font-bold my-10">Katakana Chart</h4>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 mx-auto max-w-md motion-safe:animate-fadeIn">
         {katakanaCharacters.map((char, index) => (
           <div key={index} className="p-4 bg-gray-900 rounded-lg shadow-sm text-center">
