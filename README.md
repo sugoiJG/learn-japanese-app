@@ -1,7 +1,7 @@
 # learn-japanese-app
 
-https://sugoijg.github.io/learn-japanese-app/
-
+[https://sugoijg.github.io/learn-japanese-app/
+](https://learn-japanese.onrender.com/)
 
 Learn Japanese App
 This repository contains the source code for my Learn Japanese App!
